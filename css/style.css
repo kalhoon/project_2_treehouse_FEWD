@@ -1,0 +1,234 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+.main-wrapper {
+	
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.6;
+	background-color: #d6d6d6
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+h4 {
+	text-align: center;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.port-image {
+	padding: 30px;
+}
+
+.col-images {
+	margin-bottom: 20px;
+}
+
+.col {
+	text-align: center;
+}
+
+li {
+	text-align: center;
+	background-color: #fff;
+	padding: 10px 0;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.middle-wrapper {
+	background-color: #fff;
+	width: 100%;
+}
+
+.roboto-regular {
+	font-weight: 400;
+}
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+	margin:0px;
+}
+
+.main-nav {
+	margin-top: 5px;
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.banner, .main-footer {
+	text-align: center;
+}
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+	padding: 3.2em 0;
+	margin-bottom: 60px;
+	margin-top: 20px;
+}
+
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+	
+}
+
+.headline {
+	margin-bottom: 0px;
+}
+
+.icon-location {
+	width:35px;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+}
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.logo {
+		margin-top: 30px;
+	}
+
+	.name,
+	.col {
+		float: left;
+	}
+
+	.primary,
+	.secondary {
+		width: 50%;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-left: 15px;
+	}
+
+	.tagline {
+		font-size: 1.4em;
+	}
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+	.main-header {
+		position: fixed;
+		background: #fff;
+		box-shadow: 0 1px 4px rgba(0,0,0,.15);
+		width: 100%;
+		top: 0;
+		z-index: 1;
+	}
+
+	.body {
+		padding-top: 30px;
+	}
+
+}
+
+@media (min-width: 1024px) {
+
+	.container {
+		width:80%;
+		max-width: 1150px;
+	}
+
+	.primary {
+		width: 40%;
+	}
+
+	.secondary,
+	.tertiary {
+		width: 30%;
+	}
+
+	ul {
+		float: right;
+
+	}
+
+	li {
+		float: left;
+	}
+
+}
+
+
